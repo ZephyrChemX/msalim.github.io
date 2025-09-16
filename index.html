@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Salim — Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammad Salim — pharmacy grad, automation & web tinkerer." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind config: custom font & colors
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial']
+          },
+          colors: {
+            brand: {
+              50: '#eff6ff', 100: '#dbeafe', 200: '#bfdbfe', 300: '#93c5fd', 400: '#60a5fa',
+              500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 800: '#1e40af', 900: '#1e3a8a'
+            }
+          }
+        }
+      },
+      darkMode: 'class'
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    .glass { backdrop-filter: saturate(200%) blur(12px); background: rgba(15, 23, 42, 0.55); }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-white font-sans">
+  
+  <header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[min(1100px,95%)]">
+    <div class="glass rounded-2xl px-4 md:px-6 py-3 flex items-center justify-between shadow-lg">
+      <a href="index.html" class="font-extrabold tracking-tight text-white text-lg">MSalim<span class="text-brand-300">.dev</span></a>
+      <nav class="hidden md:flex items-center gap-1">
+        <a class="text-white/90 px-3 py-2 rounded-lg hover:bg-white/10 bg-white/10" href="index.html">Home</a>
+        <a class="text-white/90 px-3 py-2 rounded-lg hover:bg-white/10 " href="blog.html">Blog</a>
+        <a class="text-white/90 px-3 py-2 rounded-lg hover:bg-white/10 " href="shop.html">Shop</a>
+        <a class="text-white/90 px-3 py-2 rounded-lg hover:bg-white/10 " href="#contact">Kontak</a>
+      </nav>
+      <button id="menuBtn" class="md:hidden text-white/90 px-3 py-2 rounded-lg hover:bg-white/10">Menu</button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden mt-2 glass rounded-2xl py-2 px-4 w-full">
+      <a class="block py-2 text-white/90" href="index.html">Home</a>
+      <a class="block py-2 text-white/90" href="blog.html">Blog</a>
+      <a class="block py-2 text-white/90" href="shop.html">Shop</a>
+      <a class="block py-2 text-white/90" href="#contact">Kontak</a>
+    </div>
+  </header>
+
+  <main class="pt-32">
+    <section class="px-6 md:px-8">
+      <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">Muhammad Salim</h1>
+          <p class="mt-4 text-lg text-white/80">S1 Farmasi • Tech tinkerer • Otomasi & Web</p>
+          <p class="mt-4 text-white/70">Aku membantu UMKM dan personal brand membuat alur kerja lebih efisien: skrip otomasi, integrasi API, dan website cepat.</p>
+          <div class="mt-6 flex items-center gap-3">
+            <a href="#projects" class="px-4 py-2 rounded-xl bg-brand-500 hover:bg-brand-600 font-semibold">Lihat Proyek</a>
+            <a href="#contact" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20">Kontak</a>
+          </div>
+          <div class="mt-6"><div class="flex items-center gap-2"><a href="https://youtube.com/@Memetaku666" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a4 4 0 0 0-2.8-2.8C18.9 3 12 3 12 3s-6.9 0-8.7.4A4 4 0 0 0 .5 6.2 41 41 0 0 0 0 12a41 41 0 0 0 .5 5.8 4 4 0 0 0 2.8 2.8C5.1 21 12 21 12 21s6.9 0 8.7-.4a4 4 0 0 0 2.8-2.8A41 41 0 0 0 24 12a41 41 0 0 0-.5-5.8ZM9.8 15.5v-7L16 12l-6.2 3.5Z"/></svg></a><a href="https://instagram.com/m_salim210?igsh=MXhqdW8yOXBqZ3U1Nw==" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A5.5 5.5 0 1 1 6.5 13 5.5 5.5 0 0 1 12 7.5Zm0 2A3.5 3.5 0 1 0 15.5 13 3.5 3.5 0 0 0 12 9.5Zm5.75-3.25a1.25 1.25 0 1 1-1.25 1.25 1.25 1.25 0 0 1 1.25-1.25Z"/></svg></a><a href="https://x.com/veenntuuree?t=jsHRFviHhZWf81Em4OEQgg&s=09" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M20.9 6.1c.9-.6 1.7-1.5 2.1-2.6-.8.5-1.8.9-2.7 1A4.6 4.6 0 0 0 12 7.4c0 .4 0 .8.1 1.1a13 13 0 0 1-9.4-4.8 4.7 4.7 0 0 0 1.4 6.2c-.7 0-1.3-.2-1.9-.5v.1c0 2.2 1.6 4.1 3.7 4.6-.4.1-.8.2-1.2.2-.3 0-.6 0-.8-.1.6 1.9 2.4 3.3 4.5 3.4A9.2 9.2 0 0 1 2 19.7 13 13 0 0 0 9 21.7c7.8 0 12.1-6.6 12.1-12.3v-.6c.8-.6 1.5-1.3 2-2.1-.7.3-1.4.5-2.2.6Z"/></svg></a><a href="https://t.me/yourusername" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M22.9 2.7 1.8 11.1c-1.3.6-1.2 2.5.2 2.9l5.2 1.6 1.9 6c.3 1 1.6 1.2 2.3.4l3.5-3.6 5.3 3.9c.9.6 2.2.1 2.4-1l2.8-17.6c.2-1.3-1-2.3-2.5-1.8Z"/></svg></a><a href="https://bsky.app/profile/bhesky.bsky.social" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 10.6C9.3 6.8 5.5 4 3.5 3.4 1.6 2.8 0 3.7 0 5.9c0 1 .5 2.1 1.3 3.2C2.5 10.8 6.5 13.1 8 14c-4 .7-6.4 2.3-7.4 3.6C-.4 19.5.2 21 2 21.3c2.1.4 6.8-2.7 10-6.8 3.2 4.1 7.9 7.2 10 6.8 1.8-.3 2.4-1.8 1.4-3.7-1-1.3-3.4-2.9-7.4-3.6 1.5-.9 5.5-3.2 6.7-4.9C23.5 8 24 6.9 24 5.9c0-2.2-1.6-3.1-3.5-2.5C18.5 4 14.7 6.8 12 10.6Z"/></svg></a><a href="https://github.com/ZephyrChemX" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.5-1.8-1.5-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 .1 2.9 1.5 1.1 2 3 1.4 3.7 1.1.1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-6a4.7 4.7 0 0 1 1.3-3.3 4.4 4.4 0 0 1 .1-3.2s1-.3 3.4 1.3a11.3 11.3 0 0 1 6.1 0c2.4-1.6 3.4-1.3 3.4-1.3a4.4 4.4 0 0 1 .1 3.2 4.7 4.7 0 0 1 1.3 3.3c0 4.8-2.7 5.6-5.3 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg></a><a href="https://www.linkedin.com/in/muhammad-salim-395a6b24a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M4.98 3.5A2.5 2.5 0 1 1 0 3.5a2.5 2.5 0 0 1 4.98 0ZM.5 8.5h4.9V24H.5zM8.7 8.5h4.7v2.1h.1A5.1 5.1 0 0 1 23 15v9h-4.9v-8.1c0-1.9-.7-3.2-2.4-3.2-1.3 0-2 .9-2.3 1.7-.1.3-.1.8-.1 1.3V24H8.7z"/></svg></a><a href="mailto:msalim3301@protonmail.com?subject=Halo%20Salim" class="p-2 rounded-lg hover:bg-white/10 text-white/90" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M2 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h20a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3Zm0 2h20l-10 7L2 7Z"/></svg></a></div></div>
+        </div>
+        <div class="relative">
+          <div class="absolute -inset-4 bg-gradient-to-tr from-brand-600/40 to-cyan-400/30 blur-2xl rounded-3xl"></div>
+          <div class="relative bg-white/5 border border-white/10 rounded-3xl p-6 shadow-xl">
+            <p class="text-white/80">Highlight:</p>
+            <ul class="mt-2 space-y-2 text-white/70 list-disc list-inside">
+              <li>Downloader Termux + yt-dlp dengan UI menu</li>
+              <li>Website portfolio + blog + shop (GitHub Pages)</li>
+              <li>Otomasi upload Google Drive dari HP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="px-6 md:px-8 mt-16">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl md:text-3xl font-bold">Proyek Terbaru</h2>
+        <div class="grid md:grid-cols-3 gap-6 mt-6">
+          <a href="#" class="block bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+            <h3 class="font-semibold">Termux URL Downloader</h3>
+            <p class="text-white/70 text-sm mt-2">Skrip bash untuk share→Termux, dukung YouTube, TikTok, IG, X, Reddit.</p>
+          </a>
+          <a href="blog.html" class="block bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+            <h3 class="font-semibold">Blog Teknis</h3>
+            <p class="text-white/70 text-sm mt-2">Catatan singkat: perbaikan aria2c, embed thumbnail, dan tips GitHub Pages.</p>
+          </a>
+          <a href="shop.html" class="block bg-white/5 border border-white/10 rounded-2xl p-5 hover:bg-white/10 transition">
+            <h3 class="font-semibold">Toko Digital</h3>
+            <p class="text-white/70 text-sm mt-2">Pulsa, token listrik, tukar PayPal, dan paket medical check-up.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="px-6 md:px-8 mt-16">
+      <div class="max-w-5xl mx-auto bg-white/5 border border-white/10 rounded-3xl p-8">
+        <h2 class="text-2xl md:text-3xl font-bold">Kontak</h2>
+        <p class="mt-2 text-white/70">Butuh bantuan proyek atau kolaborasi? Kirim pesan via email atau WhatsApp:</p>
+        <div class="mt-4 flex flex-wrap items-center gap-3">
+          <a href="mailto:msalim3301@protonmail.com?subject=Proyek%20baru%20untuk%20Salim" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20">Email</a>
+          <a href="https://wa.me/6285156676715?text=Halo%20Bang%20Salim,%20saya%20mau%20diskusi%20proyek" class="px-4 py-2 rounded-xl bg-green-500 hover:bg-green-600 text-white">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <a href="https://wa.me/6285156676715?text=Halo%20Bang%20Salim,%20saya%20tertarik%20dengan%20jasa/produk%20Anda." class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full px-4 py-3 shadow-lg flex items-center gap-2">
+    <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M.1 24 2 18.2A11.5 11.5 0 1 1 12 23.5h0A11.4 11.4 0 0 1 2.7 21ZM12 3a9 9 0 0 0-7.8 13.5l.5.9-1.2 3.5 3.6-1.1.9.5A9 9 0 1 0 12 3Zm5.2 11.7c-.3-.2-1.7-.9-2-.9s-.5 0-.7.3-.8 1-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.3 8.2 8.2 0 0 1-1.5-1.8c-.2-.3 0-.5.2-.6l.4-.5a2 2 0 0 0 .3-.6c0-.2 0-.4 0-.6s-.6-1.6-.8-2.2c-.2-.4-.4-.4-.7-.4h-.6a1.1 1.1 0 0 0-.8.4c-.3.3-1 1-1 2.3s1 2.6 1.1 2.7a11.7 11.7 0 0 0 4.5 3.8c.6.2 1 .4 1.3.5a3 3 0 0 0 1.3.1c.4-.1 1.7-.7 1.9-1.3s.2-1.1.2-1.2-.1-.2-.3-.3Z"/></svg><span class="hidden sm:inline">Chat WhatsApp</span>
+  </a>
+
+  
+  <footer class="mt-24 py-10 text-center text-white/60">
+    <p>© <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.5-1.8-1.5-1.8-1.2-.8.1-.8.1-.8 1.3.1 2 .1 2.9 1.5 1.1 2 3 1.4 3.7 1.1.1-.8.4-1.4.7-1.7-2.6-.3-5.3-1.3-5.3-6a4.7 4.7 0 0 1 1.3-3.3 4.4 4.4 0 0 1 .1-3.2s1-.3 3.4 1.3a11.3 11.3 0 0 1 6.1 0c2.4-1.6 3.4-1.3 3.4-1.3a4.4 4.4 0 0 1 .1 3.2 4.7 4.7 0 0 1 1.3 3.3c0 4.8-2.7 5.6-5.3 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/></svg> 2025 Muhammad Salim — Dibangun dengan Tailwind & GitHub Pages.</p>
+    <p class="mt-2"><a class="underline hover:text-white" href="index.html">Home</a> • <a class="underline hover:text-white" href="blog.html">Blog</a> • <a class="underline hover:text-white" href="shop.html">Shop</a></p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const m = document.getElementById('mobileMenu');
+    btn && btn.addEventListener('click', () => m.classList.toggle('hidden'));
+  </script>
+</body>
+</html>
